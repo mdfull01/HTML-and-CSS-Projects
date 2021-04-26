@@ -1,0 +1,26 @@
+/*=========================
+    FONT STYLING
+===========================*/
+body {
+    font-family: "Lucida Bright", serif;
+}
+
+p {
+    font-size: 14px;
+}
+
+.desc {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+/*=======================
+    FORM STYLING
+=========================*/
+input {
+    width: 150px;
+    margin: auto;
+    border: 1.5px solid darkgray;
+    border-radius: 3.5px;
+}
+
