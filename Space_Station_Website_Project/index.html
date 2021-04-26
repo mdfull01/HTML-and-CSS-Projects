@@ -3,13 +3,15 @@
 	<head>
 		<title>Great Flood Brewing Company</title>
 		<meta charset="utf-8">
+		<link rel="stylesheet" href="./css/Shared.css">
+		<link rel="stylesheet" href="./css/Animations.css">
 	</head>
 	<body>
 	
 		<!-- NAV -->
-		<div>
-			<div>
-				<ul>
+		<div class="wrap">
+			<div class="menu-container">
+				<ul class="menu">
 					<a href="#home" id="link"><li>HOME</li></a>
 					<a href="#gallery"><li>GALLERY</li></a>
 					<a href="#tour reservations"><li>TOUR RESERVATIONS</li></a>
@@ -19,26 +21,26 @@
 		<!-- END NAV-->
 		
 		<!-- HOME -->
-		<div id="home">
-			<div>
-				<div>
-					<span>The Brewery</span>
+		<section id="home">
+			<div class="container">
+				<div class="text-center">
+					<span class="head-main">The Brewery</span>
 				</div>
 			</div>
-		</div>
+		</section>
 		<!-- END HOME -->
 		
 		<!-- GALLERY -->
-		<section>
-			<div id="gallery">
+		<section id="gallery">
+			<div class="container">
 				<h1>Gallery</h1>
-				<div>
-					
+				<div class="flex-container">
+
 					<!-- PHOTO-CONTAINER 1 -->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 							<img src="./images/thumb/thumbnail_1.jpg" alt="Sanitary brewery fittings hung on a pegboard">
-								<div>
+								<div class="photo-overlay">
 									<h3>Click to Enlarge</h3>
 									<p>Sanitary fittings are an important part of the brewing process. They are easy to clean,
 									inspect, and sanitize. This is especially important after the boil when a sanitary environment
@@ -51,10 +53,10 @@
 					<!-- END PHOTO-CONTAINER 1 -->
 					
 					<!-- PHOTO-CONTAINER 2 -->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 							<img src="./images/thumb/thumbnail_2.jpg" alt="Milled grain ready to mash in.">
-								<div>
+								<div class="photo-overlay">
 									<h3>Click to Enlarge</h3>
 									<p>Each recipe starts as a blend of malts and potentially adjuncts that 
 									combine to create the malt flavors we all love. The grain portion of the 
@@ -67,10 +69,10 @@
 					<!-- END PHOTO-CONTAINER 2 -->
 					
 					<!-- PHOTO-CONTAINER 3 -->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 							<img src="./images/thumb/thumbnail_3.jpg" alt="The mash tun.">
-								<div>
+								<div class="photo-overlay">
 									<h3>Click to Enlarge</h3>
 									<p>The Mash tun is a special kettle where the milled grain is mixed with
 									hot water and then rests while enzymes convert the starch to sugars. 
@@ -85,10 +87,10 @@
 					<!-- END PHOTO-CONTAINER 3 -->
 					
 					<!-- PHOTO-CONTAINER 4 -->
-					<div>
-						<div>
+					<div class="photo-container"> 
+						<div class="photo">
 							<img src="./images/thumb/thumbnail_4.jpg" alt="Grain entering the mash tun.">
-								<div>
+								<div class="photo-overlay">
 									<h3>Click to Enlarge</h3>
 									<p>"Mashing In" is the process of mixing the grain with hot water. 
 									It is important to mix the grain and water well to avoid "dough balls" 
@@ -101,10 +103,10 @@
 					<!-- END PHOTO-CONTAINER 4 -->
 					
 					<!-- PHOTO-CONTAINER 5 -->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 							<img src="./images/thumb/thumbnail_5.jpg" alt="Transferring wort to the boil kettle.">
-								<div>
+								<div class="photo-overlay">
 									<h3>Click to Enlarge</h3>
 									<p>The lauter is a process where the clear sugar water (wort) created during the mash 
 									is separated from the residual "spent grain". The process starts by recirculating 
@@ -118,10 +120,10 @@
 					<!-- END PHOTO-CONTAINER 5 -->
 					
 					<!-- PHOTO-CONTAINER 6 -->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 							<img src="./images/thumb/thumbnail_6.jpg" alt="A Brewer adding hops to the boil kettle.">
-								<div>
+								<div class="photo-overlay">
 									<h3>Click to Enlarge</h3>
 									<p>The boil kettle is fired up part way through the lauter and is nearly at boil 
 									temperature when the transfer is complete. we boil wort for three main reasons; 
@@ -137,10 +139,10 @@
 					<!-- END PHOTO-CONTAINER 6 -->
 					
 					<!-- PHOTO-CONTAINER 7 -->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 							<img src="./images/thumb/thumbnail_7.jpg" alt="Grain being raked out of the mash tun.">
-								<div>
+								<div class="photo-overlay">
 									<h3>Click to Enlarge</h3>
 									<p>After the lauter is over, and all of the wort has been transferred into the boil kettle, 
 									the heavy lifting can begin. The spent grain needs to be removed from the mash tun so that 
@@ -153,10 +155,10 @@
 					<!-- END PHOTO-CONTAINER 7 -->
 					
 					<!-- PHOTO-CONTAINER 8 -->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 							<img src="./images/thumb/thumbnail_8.jpg" alt="Wort leaving the heat exchanger and being oxigenated.">
-								<div>
+								<div class="photo-overlay">
 									<h3>Click to Enlarge</h3>
 									<p>After the boil is complete we need to cool the wort to a temperature that our yeast will thrive in.
 									It is also important to keep everything the wort comes in contact with as close to sterile as possible. 
@@ -169,10 +171,10 @@
 					<!-- END PHOTO-CONTAINER 8 -->
 					
 					<!-- PHOTO-CONTAINER 9 -->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 							<img src="./images/thumb/thumbnail_9.jpg" alt="Fermenters">
-								<div>
+								<div class="photo-overlay">
 									<h3>Click to Enlarge</h3>
 									<p>Once the wort has been transferred into a fermenter we need to add the yeast. There is an old adage 
 									that "brewers make wort, but yeast makes beer" and that is mostly true. Yeast eat the sugar 
@@ -189,27 +191,27 @@
 		<!-- END GALLERY -->
 		
 		<!-- RSVP -->
-		<section>
-			<div id="tour reservations">
-				<div>
-					<h1>Tour RESERVATIONS</h1>
-					<div>
+		<section id="tour reservations">
+			<div class="container">
+				<div class="heading-padding">
+					<h1 class="heading-padding">Tour Reservations</h1>
+					<div class="reservation">
 						<h2><span>Learn the brewing process and sample finished beers!</span>
-							<br />Tour for all ages, must be 21 for samples.
+							<br/>Tour for all ages, must be 21 for samples.
 						</h2>
-						<p>
+						<p class="rsvp-text">
 							Tell us about your group and select a time slot for your tour.
 						</p>
-						<div>
+						<div class="form-rsvp">
 							<form action="" method="post">
-								<input class="rsvp" type="text" value="First Name">
-								<input class="rsvp" type="text" value="Last Name">
-								<input class="rsvp" type="email" value="Email Address">
-								<input class="rsvp" type="date" value="Date of Birth">
+								<input class="rsvp" type="text" value="" placeholder="First Name">
+								<input class="rsvp" type="text" value="" placeholder="Last Name">
+								<input class="rsvp" type="email" value="" placeholder="Email Address">
+								<input class="rsvp" type="date" value="" placeholder="Date of Birth">
 								<div class="form-spacer">
 									<label class="terms">Terms and Conditions</label>
 								</div>
-								<div>
+								<div class="submit">
 									<input type="submit" value="submit">
 								</div>
 							</form>
@@ -221,7 +223,7 @@
 		<!-- END RSVP -->
 		
 		<!-- FOOTER -->
-		<div>
+		<div id="footer">
 			Great Flood Brewing Company &nbsp;|&nbsp; &#174; 2014
 		</div>
 		<!-- END FOOTER -->
