@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!--Head-->
+    <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Matthew Fuller</title>
+        <link rel="stylesheet" type="text/css" href="./css/portfolio_project.css">
+	</head>
+
+    <!--Body-->
+	<body class="background">
+		
+        <!--Navbar-->
+        <div class="navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+        <br>
+        <br>
+
+        <!--Background video-->
+        <div id="Home">
+            <video autoplay muted loop id="typing_video">
+                <source src="./videos/typing_video.mp4" type="video/mp4">
+                <!--Display message if video fails to run-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--Video text-->
+        <div class="video_text">
+            <h1 class="white_text">Matthew Fuller's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>First, solve the problem.<br>
+                        Then, write the code.
+                    </q>
+                    <br> -John Johnson
+                    <br>
+                    <br> My name is Matthew Fuller. Welcome to my portfolio website.
+                    <br>
+                     I am a recent bootcamp graduate available for hire.
+                    <br>
+                    <br> Thank you for stopping by and enjoy!
+                </p>
+            </strong>
+        </div>
+
+        <!--About section-->
+        <div class="row" id="About">
+            <!--Left column-->
+            <div class="column_2">
+                <img src="./images/placeholder_headshot.jpg" alt="Photo of Matthew Fuller">
+            </div>
+            <!--Right column-->
+            <div class="column_1">
+                <h1>About</h1>
+                <p>
+                    I am a software developer located in Louisville, Kentucky. 
+                    <br>
+                    <br>
+                    I am a graduate of The Tech Academy's Software Developer Boot Camp,
+                     and trained and experienced in the following web and programming languages: 
+                     HTML, CSS, JavaScript, SQL, C#, Python and more.
+                    <br>
+                    <br>
+                    
+                </p>
+            </div>
+        </div>
+
+        <!--GitHub section-->
+        <div class="row" id="GitHub">
+            <!--Left column-->
+            <div class="column_1">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/mdfull01" target="_blank">Matthew Fuller GitHub</a></p>
+                </p>
+            </div>
+            <!--Right column-->
+            <div class="column_2">
+                <a href="https://github.com/mdfull01" target="_blank"><img src="./images/placeholder_work.png" alt="Screenshot of completed website"></a>
+            </div>
+        </div>
+
+        <!--Contact section-->
+        <div class="row" id="Contact">
+            <!--Contact image, left column-->
+            <div class="column_2 column_tall">
+                <img src="./images/placeholder_email.jpg" alt="email image">
+            </div>
+            <!--Contact form, right column-->
+            <div class="column_1 column_tall">
+                <h1>Contact</h1>
+                <!--This specifies where and how to send the form data-->
+                <form action="https://formspree.io/f/xoqyjkna" method="POST"> <!--Here we are utilizing a 3rd party service to submit the contact form data.-->
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                    <label>Message</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+
+        <!--Footer section-->
+        <footer>
+            <p>
+                <p class="center">&copy Prosper Consulting Inc., <a href="https://learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
+                <br>
+            </p>
+        </footer>
+	</body>
+</html>

@@ -1,0 +1,167 @@
+
+/*============
+    Nav Bar
+==============*/
+.navbar {
+    display: inline-block;
+    overflow: hidden;
+    background-color: lightblue;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: .5em;
+    color: black;
+}
+
+.navbar a:hover {
+    background:cadetblue;
+    color: #fff;
+}
+
+/*==================
+    Image Styling
+====================*/
+.container {
+    position: relative;
+    margin-top: 3.5em;
+    text-align: center;
+    font-size: 1.25em;
+    color: red;
+    font-weight: bold;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+img {
+    opacity: 1;
+    filter: sepia(30%);
+    border: 1px solid black;
+    border-radius: 15px 50px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container:hover img {
+    opacity: .3;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 1em;
+    padding: 5px;
+}
+
+.center-bottom {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+/*====================
+    General Styling
+======================*/
+
+footer {
+    display: block;
+    padding-top: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 1em;
+}
+
+p {
+    text-align: center;
+    font-size: 1.25em;
+}
+
+p:hover {
+    transform: scale(1.5);
+}
+
+/*====================
+    Table Styling
+======================*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1.5px solid dimgray;
+    text-align: center;
+    padding: .25em;
+}
+
+th {
+    background-color: lightblue;
+}
+
+/*==================
+    Column Styling
+====================*/
+.row {
+    margin-top: 1em;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    height: auto;
+    background-color: lightblue;
+    color: dimgray;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*=================
+    Video Styling
+===================*/
+video {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}

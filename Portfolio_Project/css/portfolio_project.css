@@ -1,0 +1,286 @@
+/*====================
+    General Styling
+======================*/
+body {
+    margin: 0%;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin-top: 3%;
+    color: #1a1a1a;
+}
+
+h1:hover {
+    filter: grayscale(5%);
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+/* Styling for portfolio title text */
+.white_text {
+    color: #fff;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+p:hover {
+    transition: 1s;
+    transform: scale(1.01);
+}
+
+.center {
+    text-align: center;
+}
+
+.center:hover {
+    transition: 2s;
+    transform: scale(1.1);
+}
+
+a {
+    color: blue;
+}
+
+q {
+    font-style: italic;
+}
+
+/* Image elements */
+img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: 340px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img:hover {
+    filter: grayscale(5%);
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+/* On screens 576px and smaller the images will be 100px tall and centered vertically in the column */
+@media screen and (max-width: 576px) {
+    img {
+        height: 100px;
+        margin-top: 150px;
+    }
+}
+
+/* Styling for the footer element */
+footer {
+    padding: 2%;
+    background-color: white;
+}
+/*===========================
+    End of General Styling
+=============================*/
+
+/*===================
+    Navbar styling
+=====================*/
+
+.navbar {
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    -webkit-animation: movenav 5s;
+    animation: movenav 5s;
+}
+
+/* movenav animation effect for moving the nav bar in from the left of the screen */
+@keyframes movenav {
+    from {left: -100vw;}
+    to {left: 0vw;}
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    -webkit-animation: movenavtext 5.75s;
+    animation: movenavtext 5.75s;
+}
+
+/* movenavtext animation effect for moving the navbar text from above the view to the navbar */
+@keyframes movenavtext {
+    from {top: -100vw;}
+    to {top: 0vw;}
+}
+
+/* Screens 576px and smaller will display navbar links equally distributed */
+@media screen and (max-width: 576px) {
+    .navbar a {
+        width: 25%; /* This makes each link take up 1/4 of the navbar */
+        font-size: 12px;
+    }
+}
+
+.navbar a:hover {
+    background-color: #f4f4f4;
+    color: black;
+    font-weight: bold;
+}
+
+.navbar a.active {
+    background-color: darkgray;
+}
+/*==========================
+    End of navbar styling
+============================*/
+
+/*==================
+    Video styling 
+====================*/
+#typing_video {
+    position: fixed;
+    right: 0;
+    bottom: 50%;
+    min-width: 100%;
+    z-index: -1;
+}
+
+/* Screens that are 576px and smaller will not display the background video */
+@media screen and (max-width: 576px) {
+    #typing_video {
+        display: none;
+    }
+}
+
+.video_text {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    -webkit-animation: movevideotext 5.75s;
+    animation: movevideotext 5.75s;
+}
+
+/* This animation effect causes the overlay video text to down up from the top of the page upon page load */
+@keyframes movevideotext {
+    from {top: -100vw;}
+    to {top: 0vw;}
+}
+/*=======================
+    End video styling
+=========================*/
+
+/*==================
+    Table styling
+====================*/
+* {
+    box-sizing: border-box;
+}
+
+.column_1 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 3%;
+    height: 400px;
+    background-color: #f2f2f2;
+}
+
+/* Screens 576px and smaller will display a scroll bar if the text overflows the column height */
+@media screen and (max-width: 576px) {
+    .column_1 {
+        overflow: auto;
+    }
+}
+
+.column_2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 1.9%;
+    height: 400px;
+    background-color: #4d4d4d;
+}
+
+/* This class is applied to the columns in the final row, overriding the height and padding to provide more room for the contact form while keeping the rest of the formatting from column_1 or column_2 */
+.column_tall {
+    padding-top: 3.5%;
+    height: 450px;
+}
+
+/* This inserts something after the content of selected elements (makes room for footer) */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*==========================
+    End of table styling
+============================*/
+
+/*=========================
+    Contact form styling
+===========================*/
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+input[type=text]:hover {
+    box-shadow: 0 0 5px #00004d inset;
+}
+
+input[type=submit] {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.5);
+    transition: 1.5s;
+}
+
+form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/*================================
+    End of contact form styling
+==================================*/
