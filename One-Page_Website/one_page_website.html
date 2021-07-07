@@ -4,6 +4,7 @@
 		<title>Learn to Sail St. Vincent</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="css/one_page_website.css">
+		<script src="./JS/one_page_website.js" defer></script>
 	
 		</head>
 	<body>
@@ -38,86 +39,148 @@
 		<!-- GALLERY -->
 		<section>
 			<div id="gallery">
-				<h1>Gallery</h1>
+				<h1 style="text-align: center;">Gallery</h1>
 				<hr />
-				<div>
-					
-					<!-- PHOTO-CONTAINER 1 -->
-						<div class="gallery">
-							<a target="_blank" href="./images/thumbnail_1.jpeg">
-								<img src="./images/thumbnail_1.jpeg" alt="Alex at the helm.">
-							</a>
-							<div class="desc">Alex at the helm surfing down swells between Bequia and St. Vincent.</div>
-						</div>
-					<!-- END PHOTO-CONTAINER 1 -->
-					
-					<!-- PHOTO-CONTAINER 2 -->
-						<div class="gallery">
-							<a target="_blank" href="./images/thumbnail_2.jpeg">
-								<img src="./images/thumbnail_2.jpeg" alt="Matt at the helm.">
-							</a>
-							<div class="desc">Matt at the helm heeled over in 25 knot gusts. If you think you need to reef and you don't already have one in, it's too late.</div>
-						</div>
-					<!-- END PHOTO-CONTAINER 2 -->
-					
-					<!-- PHOTO-CONTAINER 3 -->
-						<div class="gallery">
-							<a target="_blank" href="./images/thumbnail_3.jpeg">
-								<img src="./images/thumbnail_3.jpeg" alt="Matt and Alex infront of sailing vessel Transitions">
-							</a>
-							<div class="desc">Matt and Alex infront of sailing vessel Transitions, a 40 foot Bavaria.</div>
-						</div>
-					<!-- END PHOTO-CONTAINER 3 -->
-					
-					<!-- PHOTO-CONTAINER 4 -->
-						<div class="gallery">
-							<a target="_blank" href="./images/thumbnail_4.jpeg">
-								<img src="./images/thumbnail_4.jpeg" alt="Sailing vessel Transitions healing over on a port tack.">
-							</a>
-							<div class="desc">St. Vincent provides challenging and fun sailing grounds. The trade winds are consistant and sporty, take an early reef or get the toe rail in the water.</div>
-						</div>
-					<!-- END PHOTO-CONTAINER 4 -->
-					
-					<!-- PHOTO-CONTAINER 5 -->
-						<div class="gallery">
-							<a target="_blank" href="./images/thumbnail_5.jpeg">
-								<img src="./images/thumbnail_5.jpeg" alt="Lobster dinner at Romeo's in the Tabago Cays.">
-							</a>
-							<div class="desc">The snorkeling at Tabago Cays is world class, but you have to stop in and see Romeo for one of his famous Lobster dinners. </div>
-						</div>
-					<!-- END PHOTO-CONTAINER 5 -->
-					
-					<!-- PHOTO-CONTAINER 7 -->
-						<div class="gallery">
-							<a target="_blank" href="./images/thumbnail_7.jpeg">
-								<img src="./images/thumbnail_7.jpeg" alt="Alex at a floating bar.">
-							</a>
-							<div class="desc">Some anchorages even have a floating bar. Just tie off the dinghy and enjoy. One of our favorites is Bar One just off of Bequia's Princess Margaret beach.</div>
-						</div>
-					<!-- END PHOTO-CONTAINER 7 -->
-					
-					<!-- PHOTO-CONTAINER 8 -->
-						<div class="gallery">
-							<a target="_blank" href="./images/thumbnail_8.jpeg">
-								<img src="./images/thumbnail_8.jpeg" alt="Alex snorkeling near Petit St. Vincent.">
-							</a>
-							<div class="desc">Petit St. Vincent has a beautiful protected anchorage and some great snorkeling on its barrier reef. There is also a boutique resort with a great restaurant and beach bar if thats more you speed.</div>
-						</div>
-					<!-- END PHOTO-CONTAINER 8 -->
-					
-					<!-- PHOTO-CONTAINER 9 -->
-						<div class="gallery">
-							<a target="_blank" href="./images/thumbnail_9.jpeg">
-								<img src="./images/thumbnail_9.jpeg" alt="Beautiful beach at Mayreau.">
-							</a>
-							<div class="desc">Mayreau is a very sought after anchorage, and it's easy to see why with its calm waters and picture perfect beaches.</div>
-						</div>
-					<!-- END PHOTO-CONTAINER 9 -->
-					
+				<div class="row">
+					<div class="column">
+						<img src="./images/thumbnail_1.jpeg" style="width: 100%;" onclick="openModal();currentSlide(1)"
+						class="hover-shadow cursor">
+					</div>
+					<div class="column">
+						<img src="./images/thumbnail_2.jpeg" style="width: 100%;" onclick="openModal();currentSlide(2)"
+						class="hover-shadow cursor">
+					</div>
+					<div class="column">
+						<img src="./images/thumbnail_3.jpeg" style="width: 100%;" onclick="openModal();currentSlide(3)"
+						class="hover-shadow cursor">
+					</div>
+					<div class="column">
+						<img src="./images/thumbnail_4.jpeg" style="width: 100%;" onclick="openModal();currentSlide(4)"
+						class="hover-shadow cursor">
+					</div>
+					<div class="column">
+						<img src="./images/thumbnail_5.jpeg" style="width: 100%;" onclick="openModal();currentSlide(5)"
+						class="hover-shadow cursor">
+					</div>
+					<div class="column">
+						<img src="./images/thumbnail_6.jpeg" style="width: 100%;" onclick="openModal();currentSlide(6)"
+						class="hover-shadow cursor">
+					</div>
+					<div class="column">
+						<img src="./images/thumbnail_7.jpeg" style="width: 100%;" onclick="openModal();currentSlide(7)"
+						class="hover-shadow cursor">
+					</div>
+					<div class="column">
+						<img src="./images/thumbnail_8.jpeg" style="width: 100%;" onclick="openModal();currentSlide(8)"
+						class="hover-shadow cursor">
+					</div>
+					<div class="column">
+						<img src="./images/thumbnail_9.jpeg" style="width: 100%;" onclick="openModal();currentSlide(9)"
+						class="hover-shadow cursor">
+					</div>
 				</div>
 			</div>
 		</section>
 		<!-- END GALLERY -->
+
+		<!-- MODAL -->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+		  
+			  <div class="mySlides">
+				<div class="numbertext">1 / 9</div>
+				<img src="./images/thumbnail_1.jpeg" style="width:100%">
+			  </div>
+		  
+			  <div class="mySlides">
+				<div class="numbertext">2 / 9</div>
+				<img src="./images/thumbnail_2.jpeg" style="width:100%">
+			  </div>
+		  
+			  <div class="mySlides">
+				<div class="numbertext">3 / 9</div>
+				<img src="./images/thumbnail_3.jpeg" style="width:100%">
+			  </div>
+			  
+			  <div class="mySlides">
+				<div class="numbertext">4 / 9</div>
+				<img src="./images/thumbnail_4.jpeg" style="width:100%">
+			  </div>
+
+			  <div class="mySlides">
+				<div class="numbertext">5 / 9</div>
+				<img src="./images/thumbnail_5.jpeg" style="width:100%">
+			  </div>
+		  
+			  <div class="mySlides">
+				<div class="numbertext">6 / 9</div>
+				<img src="./images/thumbnail_6.jpeg" style="width:100%">
+			  </div>
+		  
+			  <div class="mySlides">
+				<div class="numbertext">7 / 9</div>
+				<img src="./images/thumbnail_7.jpeg" style="width:100%">
+			  </div>
+			  
+			  <div class="mySlides">
+				<div class="numbertext">8 / 9</div>
+				<img src="./images/thumbnail_8.jpeg" style="width:100%">
+			  </div>
+
+			  <div class="mySlides">
+				<div class="numbertext">9 / 9</div>
+				<img src="./images/thumbnail_9.jpeg" style="width:100%">
+			  </div>
+			  
+			  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		  
+			  <div class="caption-container">
+				<p id="caption"></p>
+			  </div>
+		  
+			  <div class="column">
+				<img class="demo cursor" src="./images/thumbnail_1.jpeg" style="width:100%" onclick="currentSlide(1)" 
+				alt="Alex at the helm surfing down swells between Bequia and St. Vincent.">
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="./images/thumbnail_2.jpeg" style="width:100%" onclick="currentSlide(2)"
+				 alt="Matt at the helm heeled over in 25 knot gusts. If you think you need to reef and you don't already have one in, it's too late.">
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="./images/thumbnail_3.jpeg" style="width:100%" onclick="currentSlide(3)" 
+				alt="Matt and Alex infront of sailing vessel Transitions, a 40 foot Bavaria.">
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="./images/thumbnail_4.jpeg" style="width:100%" onclick="currentSlide(4)" 
+				alt="St. Vincent provides challenging and fun sailing grounds. The trade winds are consistant and sporty, take an early reef or get the toe rail in the water.">
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="./images/thumbnail_5.jpeg" style="width:100%" onclick="currentSlide(5)" 
+				alt="The snorkeling at Tabago Cays is world class, but you have to stop in and see Romeo for one of his famous Lobster dinners.">
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="./images/thumbnail_6.jpeg" style="width:100%" onclick="currentSlide(6)"
+				 alt="Tabago Cays is a very marine preserve, with some of the best snorkeling in the caribbean. You never know who you neighbor might be.">
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="./images/thumbnail_7.jpeg" style="width:100%" onclick="currentSlide(7)" 
+				alt="Some anchorages even have a floating bar. Just tie off the dinghy and enjoy. One of our favorites is Bar One just off of Bequia's Princess Margaret beach.">
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="./images/thumbnail_8.jpeg" style="width:100%" onclick="currentSlide(8)" 
+				alt="Petit St. Vincent has a beautiful protected anchorage and some great snorkeling on its barrier reef. There is also a boutique resort with a great restaurant and beach bar if thats more you speed.">
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="./images/thumbnail_9.jpeg" style="width:100%" onclick="currentSlide(9)" 
+				alt="Mayreau is a very sought after anchorage, and it's easy to see why with its calm waters and picture perfect beaches.">
+			  </div>
+			</div>
+		  </div>
+
+
+		<!-- END MODAL -->
 		
 		<!-- VIDEO -->
 		<hr />
