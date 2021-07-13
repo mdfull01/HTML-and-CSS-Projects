@@ -34,3 +34,11 @@ function showSlides(n) { //declare showSlides
     dots[slideIndex-1].className += " active"; //make current slide dot active class
     captionText.innerHTML = dots[slideIndex-1].alt; //change captionText contents to current slide alt text
 }
+
+function validateForm() {
+    let X = document.forms['myForm']['Pnum'].value;
+    if (X == '') {
+        alert('Phone Number must be filled out');
+        return false;
+    }
+}

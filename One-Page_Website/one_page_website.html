@@ -207,10 +207,12 @@
 							Tell us about your group and select a date for your charter.
 						</p>
 						<div>
-							<form action="" method="post">
+							<form name="myForm" action="" onsubmit="return validateForm()" method="post">
 								<input class="rsvp" type="text" value="First Name">
 								<input class="rsvp" type="text" value="Last Name">
 								<input class="rsvp" type="email" value="Email Address">
+								<label for="number">Phone Number:</label>
+								<input class="rsvp" name="Pnum" type="tel">
 								<label for="date">Start Date</label>
 								<input class="rsvp" type="date" value="Start Date">
 								<div class="form-spacer">

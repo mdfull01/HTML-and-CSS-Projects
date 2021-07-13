@@ -30,6 +30,17 @@
 /*==================
     Image Styling
 ====================*/
+body {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
+
 .container {
     position: relative;
     margin-top: 3.5em;
